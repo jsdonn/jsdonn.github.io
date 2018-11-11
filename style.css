@@ -1,3 +1,15 @@
+body {
+	background-color: rgb(100,100,100);
+}
+
+h1 {
+	color: green;
+}
+
+p {
+	color: red;
+}
+
 img.resize {
 	max-width:20%;
 	max-height:20%;
