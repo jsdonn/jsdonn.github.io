@@ -3,14 +3,77 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js"> </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jquery.scrollex.js"></script>
 	<title> Justin Donn </title>
 </head>
 <body>
-	<div id="navbar">
-			<a class="navbar-item" href="about/"><button id="first">About</button></a>
-			<a class="navbar-item" href="interests/"><button id="second">Interests</button></a>
-			<a class="navbar-item" href="resume/""><button id="third">Resume</button></a>
+	<div class="main-background" id="main-background">
+		<img class="full" src="images/temp_background.jpg" alt="Main background" />
 	</div>
+	<div class="container">
+		<div id="intro">
+			<h1> Justin Donn</h1>
+			<a href = "#about-section"> 
+				<input type="image" src="images/down_arrow.svg" id="arrow"></image>
+			</a>
+		</div>
+	</div>
+	
+
+	
+	<div id="navbar">
+			<a class="navbar-item" href="#about"><button id="first">About</button></a>
+			<a class="navbar-item" href="#interests"><button id="second">Interests</button></a>
+			<a class="navbar-item" href="#resume"><button id="third">Resume</button></a>
+	</div>
+
+	<div class="container" id="about-section">
+		<section id="about">
+			<br>
+			<br>
+			<h1> About Me </h1>
+			<div id="about-me-content">
+				<img class="resize" src="images/placeholder_image.jpg" alt="A picture of my sister, cousin, and I"/>
+				<div id="about-text">
+					<p> I'm a sophomore at UC Berkeley studying Electrical Engineering and Computer Science. 
+					</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<div class="container" id="interests-section">
+		<section id="interests">
+			<br>
+			<br>
+			<h1> Interests </h1>
+			<div class="interest" id="interest1">
+				<img class="resize" src="images/temp_interest1.jpg" alt="Picture of first interest" />
+				This is my first interest.
+			</div>
+			<div class="interest" id="interest2">
+				This is my second interest.
+				<img class="resize" src="images/temp_interest2.jpg" alt="Picture of second interest" />
+			</div>
+			<div class="interest" id="interest3">
+				<img class="resize" src="images/temp_interest3.jpg" alt="Picture of third interest" />
+				This is my third interest.
+			</div>
+		</section>
+	</div>
+
+	<div class="container" id="resume-section">
+		<section id="resume">
+			<br>
+			<br>
+			<h1> Resume </h1>
+			For now, here is a <a href="../other_files/10-29-18_Resume_website.pdf">link</a> to my resume.
+		</section>
+	</div>
+
 </body>
 	
 </html>

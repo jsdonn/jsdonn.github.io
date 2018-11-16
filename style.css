@@ -3,51 +3,62 @@ https://www.w3schools.com/colors/colors_picker.asp
 #778899
 */
 
+/*@import url('https://fonts.googleapis.com/css?family=Varela+Round')*/
+
+@font-face {
+	font-family: 'Varela Round';
+	src: url(other_files/Varela_Round/VarelaRound-Regular.ttf) format('truetype');
+}
+
 html {
-	font-family: Open Sans;
+	font-family: 'Varela Round';
+	height: 100%;
 }
 
 body {
 	background-color: #b6bfc8;
+	height: 100%;
 }
 
-h1 {
-	/*color: green;*/
+#intro {
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	top: 40%;
+	/* adjust these for placement of middle text */
 }
 
-p {
-	/*color: red;*/
+#intro h1 {
+	font-weight: 400;
+	font-size: 80px;
 }
 
-button {
+#navbar {
+  	background-color: transparent;
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	display: block;
+  	text-align: right;
+  	padding: 10px;
+  	z-index: 1;
+}
+
+#navbar button {
 	border: 0;
 	padding: 0;
 	font-size: 100%;
 	font-family: inherit;
-	background-color: #26262a;
+	background-color: transparent;
 	color: white;
 	outline: none;
 	cursor: pointer;
 }
 
-button:hover {
-	color: #d3d9de;
-}
-
-#navbar {
-  	background-color: #26262a;
-  	position: fixed;
-  	top: 0;
-  	width: 100%;
-  	display: block;
-  	text-align: right;
-  	padding: 10px;
-  	z-index: -1;
-  	flex-direction: row;
-}
-
 #navbar a {
-	margin-right: 20px;
+	margin-right: 30px;
 	/*this is the distance between the buttons*/	
 }
 
@@ -55,7 +66,60 @@ button:hover {
 	background-color: #333;
 }
 
+img.full {
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%;
+	position: fixed;
+	z-index: -1;
+	opacity: 0.3;
+}
+
 img.resize {
 	max-width:20%;
 	max-height:20%;
+}
+
+#navbar.scroll {
+  background-color: #6e8091;
+  transition: background-color 200ms linear;
+}
+
+.container {
+
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#about-section {
+	background-color: #6e9191;
+}
+
+#interests-section {
+	background-color: #88916e;
+}
+
+#resume-section {
+	background-color: #886e91;
+}
+
+#about {
+	text-align: center;
+	justify-content: center;
+}
+
+#interests {
+	text-align: center;
+	justify-content: center;
+}
+
+#resume {
+	text-align: center;
+	justify-content: center;
 }
