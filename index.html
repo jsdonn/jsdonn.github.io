@@ -6,9 +6,16 @@
 	<script src="script.js"> </script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="jquery.scrollex.js"></script>
+	<link rel="icon" href="images/favicon.ico" type: image/x-icon" />
 	<title> Justin Donn </title>
 </head>
 <body>
+
+	<div id="navbar">
+			<a class="navbar-item" href="#about"><button id="first">About</button></a>
+			<a class="navbar-item" href="#interests"><button id="second">Interests</button></a>
+			<a class="navbar-item" href="#projects"><button id="third">Projects</button></a>
+	</div>
 	<div class="main-background" id="main-background">
 		<img class="full" src="images/temp_background.jpg" alt="Main background" />
 	</div>
@@ -21,19 +28,10 @@
 		</div>
 	</div>
 	
-
-	
-	<div id="navbar">
-			<a class="navbar-item" href="#about"><button id="first">About</button></a>
-			<a class="navbar-item" href="#interests"><button id="second">Interests</button></a>
-			<a class="navbar-item" href="#resume"><button id="third">Resume</button></a>
-	</div>
-
 	<div class="container" id="about-section">
 		<section id="about">
 			<br>
-			<br>
-			<h1> About Me </h1>
+			<h2> About Me </h2>
 			<div id="about-me-content">
 				<img class="resize" src="images/placeholder_image.jpg" alt="A picture of my sister, cousin, and I"/>
 				<div id="about-text">
@@ -44,12 +42,10 @@
 		</section>
 	</div>
 
-
 	<div class="container" id="interests-section">
 		<section id="interests">
 			<br>
-			<br>
-			<h1> Interests </h1>
+			<h2> Interests </h2>
 			<div class="interest" id="interest1">
 				<img class="resize" src="images/temp_interest1.jpg" alt="Picture of first interest" />
 				This is my first interest.
@@ -65,12 +61,25 @@
 		</section>
 	</div>
 
-	<div class="container" id="resume-section">
-		<section id="resume">
+	<div class="container" id="projects-section">
+		<section id="projects">
 			<br>
-			<br>
-			<h1> Resume </h1>
+			<h2> Projects </h2>
 			For now, here is a <a href="../other_files/10-29-18_Resume_website.pdf">link</a> to my resume.
+		</section>
+	</div>
+
+	<div class= "mini-container" id="footer">
+		<section class="contact-me">
+			<!--<h3> Contact Me </h3> -->
+			<p> Email &nbsp;|&nbsp; GitHub &nbsp;|&nbsp; LinkedIn &nbsp;|&nbsp; Resume</p>
+			<div>
+				<a href="mailto:jdonn@berkeley.edu"><img src="images/email.png" /></a>
+				<a href="https://github.com/jsdonn" target="_blank"><img src="images/github.png" /></a>
+				<a href="https://linkedin.com/in/jsdonn" target="_blank"><img src="images/linkedin.png" /></a>
+				<a href="other_files/10-29-18_Resume_website.pdf"><img src="images/resume.png" /></a>
+			</div>
+			<small> &copy; 2018 Justin Donn </small>
 		</section>
 	</div>
 

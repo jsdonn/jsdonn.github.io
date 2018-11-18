@@ -13,11 +13,32 @@ https://www.w3schools.com/colors/colors_picker.asp
 html {
 	font-family: 'Varela Round';
 	height: 100%;
+	max-width: 100%;
+	/*overflow-x: hidden;*/
 }
 
 body {
+	max-width: 100%;
+	margin: 0;
 	background-color: #b6bfc8;
 	height: 100%;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 120px;
+	color: white;
+}
+
+h2 {
+	font-weight: 200;
+	font-size: 80px;
+}
+
+h3 {
+	font-weight: 100;
+	font-size: 30px;
 }
 
 #intro {
@@ -25,13 +46,15 @@ body {
 	overflow: hidden;
 	position: relative;
 	text-align: center;
-	top: 40%;
-	/* adjust these for placement of middle text */
+	top: 30%;
+	height: 70%;
+	/* adjust these for placement of middle text \
+	change height to be 100 - top!!! */
 }
 
-#intro h1 {
-	font-weight: 400;
-	font-size: 80px;
+#intro input {
+	position: absolute;
+	bottom: 10%;
 }
 
 #navbar {
@@ -69,6 +92,8 @@ body {
 img.full {
 	top: 0; 
 	left: 0; 
+	margin: 0;
+	padding: 0;
 	width: 100%; 
 	height: 100%;
 	position: fixed;
@@ -87,6 +112,9 @@ img.resize {
 }
 
 .container {
+	display: block;
+	position: relative;
+	padding-left: 50px;
 	width: 100%;
 	height: 100%;
 	background-attachment: fixed;
@@ -104,21 +132,52 @@ img.resize {
 	background-color: #88916e;
 }
 
-#resume-section {
+#projects-section {
 	background-color: #886e91;
 }
 
-#about {
+#about, #interests, #projects {
 	text-align: center;
 	justify-content: center;
 }
 
-#interests {
+/*#interests {
 	text-align: center;
 	justify-content: center;
 }
 
-#resume {
+#projects {
 	text-align: center;
 	justify-content: center;
+}*/
+.mini-container {
+	left: 0;
+	width: 100%;
+	height: 100px;
+}
+
+#footer {
+	background-color: orange;
+	color: white;
+	text-align: center;
+	padding: 30px;
+
+}
+
+#footer p {
+	margin-top: 0;
+}
+
+#footer img {
+	width: 30px;
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	opacity: 0.5;
+	transition: 0.5s all;
+}
+
+#footer img:hover {
+	opacity: 1;
 }
