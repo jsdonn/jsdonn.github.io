@@ -22,7 +22,7 @@ body {
 	margin: 0;
 	background-color: #b6bfc8;
 	height: 100%;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 
 h1 {
@@ -60,9 +60,7 @@ h3 {
 #navbar {
   	background-color: transparent;
   	position: fixed;
-  	top: 0;
-  	left: 0;
-  	width: 100%;
+   	width: 100%;
   	display: block;
   	text-align: right;
   	padding: 10px;
@@ -114,26 +112,71 @@ img.resize {
 .container {
 	display: block;
 	position: relative;
-	padding-left: 50px;
 	width: 100%;
 	height: 100%;
-	background-attachment: fixed;
+	/*background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 
 #about-section {
-	background-color: #6e9191;
+	background-color: #bbbbbb;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#about-me-content {
+	padding-left: 15%;
+	padding-right: 0;
+	justify-content: center;
+	max-width: 70%;
+
+}
+
+#about-text {
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+
+#about-me-content p {
+	font-size: 20;
 }
 
 #interests-section {
-	background-color: #88916e;
+	display: flex;
+	
+	background-color: #EAEAEA;
+}
+
+.interest {
+	/*justify-content: center;
+	display: inline-block;*/
+	padding-left: 10%;
+	height: 25%;
+}
+
+.interest p {
+	text-align: left;
+}
+
+.video {
+	float: left;
+}
+
+.paragraph {
+	
+	float: left;
+}
+
+.clearfix {
+	clear:both;
 }
 
 #projects-section {
-	background-color: #886e91;
+	background-color: #FFFFEF;
 }
 
 #about, #interests, #projects {
@@ -141,24 +184,16 @@ img.resize {
 	justify-content: center;
 }
 
-/*#interests {
-	text-align: center;
-	justify-content: center;
-}
-
-#projects {
-	text-align: center;
-	justify-content: center;
-}*/
 .mini-container {
-	left: 0;
-	width: 100%;
+	display: block;
+	position: relative;
+	padding: 0;
 	height: 100px;
 }
 
 #footer {
-	background-color: orange;
-	color: white;
+	background-color: #e4ffe5;
+	color: black;
 	text-align: center;
 	padding: 30px;
 
