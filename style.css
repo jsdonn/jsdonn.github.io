@@ -10,11 +10,15 @@ https://www.w3schools.com/colors/colors_picker.asp
 	src: url(other_files/Varela_Round/VarelaRound-Regular.ttf) format('truetype');
 }
 
+@font-face {
+	font-family: 'Julius Sans One';
+	src: url(other_files/Julius_Sans_One/JuliusSansOne-Regular.ttf) format('truetype');
+}
+
 html {
 	font-family: 'Varela Round';
 	height: 100%;
 	max-width: 100%;
-	/*overflow-x: hidden;*/
 }
 
 body {
@@ -22,11 +26,11 @@ body {
 	margin: 0;
 	background-color: #b6bfc8;
 	height: 100%;
-	/*overflow-x: hidden;*/
 }
 
 h1 {
-	font-weight: 400;
+	font-family: 'Julius Sans One';
+	font-weight: 800;
 	font-size: 120px;
 	color: white;
 }
@@ -46,8 +50,8 @@ h3 {
 	overflow: hidden;
 	position: relative;
 	text-align: center;
-	top: 30%;
-	height: 70%;
+	top: 32%;
+	height: 68%;
 	/* adjust these for placement of middle text \
 	change height to be 100 - top!!! */
 }
@@ -80,7 +84,6 @@ h3 {
 
 #navbar a {
 	margin-right: 30px;
-	/*this is the distance between the buttons*/	
 }
 
 #navbar button:hover {
@@ -108,7 +111,7 @@ img.resize {
 }
 
 #navbar.scroll {
-  background-color: #6e8091;
+  background-color: #7c8c9c;
   transition: background-color 200ms linear;
 }
 
