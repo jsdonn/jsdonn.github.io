@@ -100,8 +100,11 @@ img.full {
 }
 
 img.resize {
-	max-width:20%;
-	max-height:20%;
+	border-radius: 20px;
+	margin-top: 40px;
+	margin-right: 50px;
+	max-width: 25%;
+	max-height: 25%;
 }
 
 #navbar.scroll {
@@ -122,20 +125,26 @@ img.resize {
 
 
 #about-section {
-	background-color: #bbbbbb;
+	background-color: #c8c8c8;
 	padding-left: 0;
 	padding-right: 0;
 }
 
 #about-me-content {
-	padding-left: 15%;
-	padding-right: 0;
+	padding-left: 20%;
+	padding-right: 15%;
 	justify-content: center;
 	max-width: 70%;
+}
 
+#about-me-content img {
+	height: 25%;
+	width: 25%;
+	border-radius: 25px;
 }
 
 #about-text {
+	margin-right: -10%;
 	float: left;
 	width: 50%;
 	text-align: right;
@@ -146,16 +155,20 @@ img.resize {
 }
 
 #interests-section {
-	display: flex;
-	
 	background-color: #EAEAEA;
 }
 
 .interest {
-	/*justify-content: center;
-	display: inline-block;*/
-	padding-left: 10%;
-	height: 25%;
+	/*justify-content: center;*/
+	justify-content: center;
+	/*display: inline-block;*/
+	padding-left: 18%;
+	padding-right: 18%;
+	height: 20%;
+}
+
+.interest h4 {
+	text-align: left
 }
 
 .interest p {
@@ -164,11 +177,18 @@ img.resize {
 
 .video {
 	float: left;
+	border-radius: 20px;
+}
+
+.audio {
+	position: absolute;
+	bottom: 5%;
+	left: 55%;
 }
 
 .paragraph {
-	
-	float: left;
+	width: 60%;
+	float: right;
 }
 
 .clearfix {
