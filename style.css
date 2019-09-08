@@ -131,14 +131,14 @@ img.resize {
 }
 
 .container {
-	/*display: flex;
-	justify-content: center;*/
+	display: flex;
+	justify-content: center;
 	position: relative;
 	width: 100%;
-	/*height: 100%;*/
-	display: block;
+	height: 100%;
+	/*display: block;*/
 	/*max-height: 100%;*/
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 	
 
 	/*background-attachment: fixed;
@@ -201,9 +201,9 @@ img.resize {
 .interest {
 	/*justify-content: center;*/
 	justify-content: center;
-	display: flex;
-	/*padding-left: 18%;
-	padding-right: 18%;*/
+	display: block;
+	padding-left: 8%;
+	padding-right: 8%;
 	max-height: 20%;
 }
 
@@ -226,8 +226,8 @@ img.resize {
 
 .audio {
 	position: relative;
-	bottom: 5%;
-	left: 55%;
+	bottom: 0%;
+	left: 0;
 }
 
 .paragraph {
