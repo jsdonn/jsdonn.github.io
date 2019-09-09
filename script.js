@@ -4,6 +4,10 @@ window.onscroll = () => {
   if(this.scrollY <= window.innerHeight - 35) nav.className = ''; else nav.className = 'scroll';
 };
 
+function goToSection(str) {
+	document.getElementById(str).scrollIntoView(true);
+}
+
 (function($) {
 	$('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
