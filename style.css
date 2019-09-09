@@ -11,12 +11,12 @@ https://www.w3schools.com/colors/colors_picker.asp
 }
 
 @font-face {
-	font-family: 'Julius Sans One';
-	src: url(other_files/Julius_Sans_One/JuliusSansOne-Regular.ttf) format('truetype');
+	font-family: 'Proxima Nova';
+	src: url(other_files/Proxima_Nova/ProximaNova-Regular.ttf) format('truetype');
 }
 
 html {
-	font-family: 'Varela Round';
+	font-family: 'Proxima Nova';
 	height: 100%;
 	max-width: 100%;
 	scroll-behavior: smooth;
@@ -30,8 +30,9 @@ body {
 }
 
 h1 {
-	font-family: 'Julius Sans One';
-	font-weight: 800;
+	/*font-family: 'Julius Sans One';*/
+	font-family: 'Varela Round';
+	font-weight: 400;
 	font-size: 120px;
 	color: white;
 }
@@ -57,6 +58,8 @@ h1 {
 }*/
 
 h3 {
+	font-family: 'Varela Round';
+	color: white;
 	font-weight: 100;
 	font-size: 30px;
 }
@@ -127,7 +130,8 @@ img.resize {
 }
 
 #navbar.scroll {
-  background-color: #7c8c9c;
+  /*background-color: #ccdae3;*/ /*sky*/
+  background-color: #B8BACF;
   transition: background-color 200ms linear;
 }
 
@@ -154,7 +158,8 @@ img.resize {
 
 
 #about-section {
-	background-color: #c8c8c8;
+	/*background-color: #c8c8c8;*/
+	background-color: #FFFFEF;
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -196,11 +201,14 @@ img.resize {
 }
 
 #interests-section {
-	background-color: #EAEAEA;
+	/*background-color: #EAEAEA;*/
+	/*background-color: #b5e6ff; */ /*blue*/
+	background-color: #B8BACF; /*purple*/
 }
 
 .interest {
 	/*justify-content: center;*/
+	text-align: left;
 	justify-content: center;
 	display: block;
 	padding-left: 8%;
@@ -209,6 +217,7 @@ img.resize {
 }
 
 .interest h4 {
+	font-weight: 700;
 	text-align: left
 }
 
@@ -227,8 +236,9 @@ img.resize {
 
 .audio {
 	position: relative;
-	bottom: 0%;
+	bottom: 0;
 	left: 0;
+	margin-left: 0;
 }
 
 .paragraph {
@@ -257,7 +267,8 @@ img.resize {
 }
 
 #footer {
-	background-color: #e4ffe5;
+	background-color: #B8BACF;
+	/*background-color: #e4ffe5;*/
 	color: black;
 	text-align: center;
 	padding: 30px;
