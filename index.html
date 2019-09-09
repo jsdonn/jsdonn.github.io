@@ -12,10 +12,15 @@
 <body>
 
 	<div id="navbar">
-		<a class="navbar-item" href="javascript:goToSection('home')"><button id="first">Home</button></a>
-		<a class="navbar-item" href="javascript:goToSection('about')"><button id="second">About</button></a>
-		<a class="navbar-item" href="javascript:goToSection('interests')"><button id="third">Interests</button></a>
-		<a class="navbar-item" href="javascript:goToSection('projects')"><button id="fourth">Projects</button></a>
+		<div id="myname">
+			Justin Donn
+		</div>
+		<div id="navbar-links">
+			<a class="navbar-item" href="javascript:goToSection('home')"><button id="first">Home</button></a>
+			<a class="navbar-item" href="javascript:goToSection('about')"><button id="second">About</button></a>
+			<a class="navbar-item" href="javascript:goToSection('interests')"><button id="third">Interests</button></a>
+			<a class="navbar-item" href="javascript:goToSection('projects')"><button id="fourth">Projects</button></a>
+		</div>
 	</div>
 	<div class="main-background" id="main-background">
 		<img class="full" src="images/berkeley_background_e.jpg" alt="Main background" />
@@ -37,17 +42,33 @@
 			<br>
 			<h2> About Me </h2>
 			<div id="about-me-content">
-				<img src="images/boom-68.jpg" alt="A picture of me"/>
+				<img id="mypic" src="images/boom-68.jpg" alt="A picture of me"/>
 				<div id="about-text">
 					<p>
 						Hey, I'm Justin! I'm currently a junior UC Berkeley student studying Electrical Engineering and Computer Science, and I'm also pursuing a minor in Bioengineering. I was born and raised in the Bay Area, and I believe that this has greatly influenced my interest in computer science and technology in general. Constantly surrounded by new tech, hard-working students and engineers, and a bunch of Teslas, it's only natural that I'd grow up to be fascinated by the pure innovation and always-changing nature of the famous Silicon Valley. I'm currently looking for software engineering internship opportunities for summer 2020! Please feel free to take a look at my resume <a href="other_files/09-06-19_Resume.pdf">here</a> and reach out to me at jdonn@berkeley.edu.
 					</p>
+					<br>
+					<br>
 <!-- 					<p>
 						
 
 						I'm really passionate about both fields, and I believe that it will be a combination of the two subjects that will drive advancements in medicine and healthcare in the near future. Specifically, I'm interested in using computer science to maximize people's happiness and quality of life, whether it be through a mobile application, computer software, or biomedical devices. 
 					</p>
- -->			</div>
+ -->
+ 					<div id="links-container">
+						<div>
+							<a href="mailto:jdonn@berkeley.edu"><img src="images/email.png" /></a>
+							<!-- icon from flaticon.com, created by Yannick -->
+							<a href="https://github.com/jsdonn" target="_blank"><img src="images/github.png" /></a>
+							<!-- icon from flaticon.com, created by Dave Gandy -->
+							<a href="https://linkedin.com/in/jsdonn" target="_blank"><img src="images/linkedin.png" /></a>
+							<!-- icon from flaticon.com, created by SimpleIcon -->
+							<a href="other_files/09-06-19_Resume.pdf"><img src="images/resume.png" /></a>
+							<!-- icon from flaticon.com, created by Icongeek26 -->
+							<p> Email &nbsp;|&nbsp; GitHub &nbsp;|&nbsp; LinkedIn &nbsp;|&nbsp; Resume</p>
+						</div>
+ 					</div>
+				</div>
 			</div>
 		</section>
 	</div>
@@ -122,19 +143,9 @@
 
 	<div class= "mini-container" id="footer">
 		<section class="contact-me">
-			<!--<h3> Contact Me </h3> -->
-			<p> Email &nbsp;|&nbsp; GitHub &nbsp;|&nbsp; LinkedIn &nbsp;|&nbsp; Resume</p>
-			<div>
-				<a href="mailto:jdonn@berkeley.edu"><img src="images/email.png" /></a>
-				<!-- icon from flaticon.com, created by Yannick -->
-				<a href="https://github.com/jsdonn" target="_blank"><img src="images/github.png" /></a>
-				<!-- icon from flaticon.com, created by Dave Gandy -->
-				<a href="https://linkedin.com/in/jsdonn" target="_blank"><img src="images/linkedin.png" /></a>
-				<!-- icon from flaticon.com, created by SimpleIcon -->
-				<a href="other_files/09-06-19_Resume.pdf"><img src="images/resume.png" /></a>
-				<!-- icon from flaticon.com, created by Icongeek26 -->
-			</div>
-			<small> &copy; 2019 Justin Donn | This website is still under development! Feel free to let me know about any bugs you encounter through email :) </small>
+			<small> This website is still under development! Feel free to give me feedback through email :) </small>
+			<br>
+			<small> &copy; 2019 Justin Donn</small>
 		</section>
 	</div>
 
