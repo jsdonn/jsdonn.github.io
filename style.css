@@ -69,8 +69,8 @@ h3 {
 	overflow: hidden;
 	position: relative;
 	text-align: center;
-	top: 32%;
-	height: 68%;
+	top: 28%;
+	height: 72%;
 	/* adjust these for placement of middle text \
 	change height to be 100 - top!!! */
 }
@@ -78,6 +78,15 @@ h3 {
 #intro input {
 	position: absolute;
 	bottom: 10%;
+}
+
+#arrow {
+	opacity: .7;
+	transition: 0.5s all;
+}
+
+#arrow:hover {
+	opacity: 1;
 }
 
 #navbar {
